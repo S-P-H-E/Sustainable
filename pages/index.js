@@ -48,8 +48,8 @@ export default function Home() {
 
       {/* Newsletter Pop-Up */}
       {showPopup && (
-        <div className='w-full h-screen fixed flex justify-start items-end'>
-          <animated.div style={popupAnimation} className="bg-black rounded-2xl w-[600px] h-[240px] md:h-[300px] shadow-2xl p-6 py-8 md:p-10">
+        <div className='w-full h-screen fixed flex justify-start items-end overflow-hidden'>
+          <animated.div style={popupAnimation} className="bg-black rounded-2xl w-[600px] h-[240px] md:h-[300px] shadow-2xl p-6 py-8 md:p-10 overflow-hidden">
             <div className="flex flex-col md:flex-row justify-between text-center md:text-left">
               <div className='w-full'>
                 <h2 className='text-xl md:text-4xl text-white '>Get our FREE weekly newsletter</h2>
