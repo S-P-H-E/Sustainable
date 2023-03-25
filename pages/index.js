@@ -33,7 +33,8 @@ export default function Home() {
   //Animation
   const [popupAnimation, setPopupAnimation] = useSpring(() => ({
     from: { opacity: 0, transform: 'translateY(130px)' },
-    to: { opacity: 1, transform: 'translateY(0)' }
+    to: { opacity: 1, transform: 'translateY(0)' },
+    delay: 400
   }));
 
   return (
