@@ -64,7 +64,7 @@ export default function Home() {
               <span className="cursor-pointer hidden md:flex" onClick={closePopup}>
                 <RxCross2 size={25} className='bg-black text-white rounded-full p-1'/>
               </span>
-              <button className='bg-white mt-5 rounded-full p-2 text-center md:hidden' onClick={closePopup}>
+              <button className='bg-white my-5 rounded-full p-2 text-center md:hidden' onClick={closePopup}>
                 Close
               </button>
             </div>
