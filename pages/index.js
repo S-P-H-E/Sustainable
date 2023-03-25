@@ -72,12 +72,12 @@ export default function Home() {
             <div className='chart h-[15px] w-[15px]'/>
           </div>
           <div>
-            <h1 className='text-[1.5rem] font-medium'>Earning traffic</h1>
+            <h1 className='text-[1.2rem] lg:text-[1.5rem] font-medium'>Earning traffic</h1>
             <p className='text-[0.7rem] lg:text-[0.8rem] text-[#424148]'>
               Marketing is all about driving traffic
               and generating leads. Without targeted
               traffic, a website is essentially worthless.
-              That's why our team of experienced marketers
+              That{"'"}s why our team of experienced marketers
               partners with you to identify your ideal customer
               and get to work promoting your brand.
             </p>
@@ -90,7 +90,7 @@ export default function Home() {
             <div className='paint h-[15px] w-[15px]'/>
           </div>
           <div>
-            <h1 className='text-[1.5rem] font-medium'>Design that dazzles</h1>
+            <h1 className='text-[1.2rem] lg:text-[1.5rem] font-medium'>Design that dazzles</h1>
             <p className='text-[0.7rem] lg:text-[0.8rem] text-[#424148]'>
             Your business is unique and you need a
             website that can help separate you from
@@ -108,14 +108,14 @@ export default function Home() {
             <div className='rocket h-[15px] w-[15px]'/>
           </div>
           <div>
-            <h1 className='text-[1.5rem] font-medium'>Earning traffic</h1>
+            <h1 className='text-[1.2rem] lg:text-[1.5rem] font-medium'>Expand your social reach</h1>
             <p className='text-[0.7rem] lg:text-[0.8rem] text-[#424148]'>
-              Marketing is all about driving traffic 
-              and generating leads. Without targeted
-              traffic, a website is essentially worthless. 
-              That's why our team of experienced marketers
-              partners with you to identify your ideal customer 
-              and get to work promoting your brand.
+            Connectivity and online interaction are a
+            must for any company focused on
+            growth. Our team of social media experts
+            can create a social media management
+            plan that gets the right message in front
+            of your desired audience.
             </p>
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function Home() {
         <h1 className='heroh1 text-center text-[1.6rem] md:text-[3.4rem] leading-normal md:leading-[6.4rem]'>
           What are you waiting for?
         </h1>
-        <p className='text-[0.8rem] md:text-[1rem]'>Take action, let's get more eyes on your brand</p>
+        <p className='text-[0.8rem] md:text-[1rem]'>Take action, let{"'"}s get more eyes on your brand</p>
         <div className='flex gap-4 mt-11'>
           <button className='bg-black text-white rounded-full px-[50px] p-3 text-[15px] md:text-[20px]' onClick={() => window.open("https://www.instagram.com/xpc_marketing/")}>
             Get in touch
