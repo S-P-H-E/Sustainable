@@ -23,14 +23,18 @@ export default function Home() {
   };
 
   const closePopup = () => {
-    setShowPopup(false);
+    // setShowPopup(false);
+    setPopupAnimation({ 
+      from: { opacity: 1, transform: 'translateY(0)' },
+      to: { opacity: 0,transform: 'translateY(250px)' }
+     });
   };
 
   //Animation
-  const popupAnimation = useSpring({
-    from: { opacity: 0, transform: 'translateY(130px)'},
-    to: { opacity: 1, transform: 'translateY(0)'}
-  })
+  const [popupAnimation, setPopupAnimation] = useSpring(() => ({
+    from: { opacity: 0, transform: 'translateY(130px)' },
+    to: { opacity: 1, transform: 'translateY(0)' }
+  }));
 
   return (
     <>
