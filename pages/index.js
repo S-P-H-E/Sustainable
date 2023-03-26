@@ -23,12 +23,16 @@ export default function Home() {
   };
 
   const closePopup = () => {
-    // setShowPopup(false);
     setPopupAnimation({ 
       from: { opacity: 1, transform: 'translateY(0)' },
       to: { opacity: 0,transform: 'translateY(250px)' }
-     });
+    });
+    
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 400);
   };
+  
 
   //Animation
   const [popupAnimation, setPopupAnimation] = useSpring(() => ({
