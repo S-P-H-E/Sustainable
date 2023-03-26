@@ -4,7 +4,7 @@ import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 const faqs = [
   {
     question: 'What is Sustainable Agency?',
-    answer: 'Sustainable Agency is a Social Media Marketing Agency geared towards helping solar business get more leads therefore generating more sales.'
+    answer: 'Sustainable Agency is a Social Media Marketing Agency geared towards helping solar businesses get more leads therefore generating more sales.'
   },
   {
     question: 'How our services work.',
