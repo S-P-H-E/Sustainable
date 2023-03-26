@@ -8,7 +8,7 @@ import {FiMail} from 'react-icons/fi'
 import {RxCross2} from 'react-icons/rx'
 
 export default function Home() {
-  const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
 
   const servicesRef = useRef(null);
   const getInTouchRef = useRef(null);
