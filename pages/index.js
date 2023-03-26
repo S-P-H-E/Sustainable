@@ -6,9 +6,11 @@ import { useSpring, animated } from 'react-spring'
 import {HiChevronDown} from 'react-icons/hi'
 import {FiMail} from 'react-icons/fi'
 import {RxCross2} from 'react-icons/rx'
+import FaqSection from '@/components/FAQs';
+import FAQs from '@/components/FAQs';
 
 export default function Home() {
-  const [showPopup, setShowPopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(true);
 
   const servicesRef = useRef(null);
   const getInTouchRef = useRef(null);
@@ -38,8 +40,14 @@ export default function Home() {
   const [popupAnimation, setPopupAnimation] = useSpring(() => ({
     from: { opacity: 0, transform: 'translateY(130px)' },
     to: { opacity: 1, transform: 'translateY(0)' },
-    delay: 400
+    delay: 800
   }));
+
+  const headingAnimation = useSpring({
+    from: { opacity: 0, transform: 'translateY(130px)' },
+    to: { opacity: 1, transform: 'translateY(0)' },
+    delay: 200
+  });
 
   return (
     <>
@@ -99,7 +107,7 @@ export default function Home() {
 
       {/* Hero */}
       <div className='bg-black mx-5'>
-        <div className='bg-[#f3f3f5] rounded-3xl border border-black p-10'>
+        <div className='bg-[#f3f3f5] rounded-3xl border border-black p-10 mask'>
           <h1 className='heroh1 text-[3.5rem] md:text-[5.4rem] leading-[4rem] md:leading-[6.4rem]'>
             Breaking <br/> marketing <br/>barriers
           </h1>
@@ -172,6 +180,20 @@ export default function Home() {
         </div>
       </div>
 
+      {/* FAQs */}
+      <div className='bg-black mx-5' ref={getInTouchRef} id="getintouch">
+          <div className='bg-[#f3f3f5] rounded-3xl border border-black p-10 flex flex-col md:flex-row justify-start items-start'>
+            <div className='flex flex-col justify-start items-start md:mr-[60px]'>
+              <h1 className='heroh1 text-center text-[1.6rem] md:text-[3.4rem] leading-normal md:leading-[6.4rem] px-4'>
+                General FAQs
+              </h1>
+              <p className='w-[250px] text-[12px] md:text-[1rem] md:w-[500px] px-4 mb-10'>Everything you need to know about our services and how they work. Can't find an answer? Please <mark className='bg-transparent underline cursor-pointer' onClick={Email}>chat to our friendly team.</mark></p>
+            </div>
+            <FAQs />
+          </div>
+      </div>
+
+
       {/* Get in touch */}
       <div className='bg-black mx-5' ref={getInTouchRef} id="getintouch">
         <div className='bg-[#f3f3f5] rounded-3xl border border-black p-10 flex flex-col justify-center items-center'>
@@ -183,6 +205,9 @@ export default function Home() {
             <button className='bg-black text-white rounded-full px-[50px] p-3 text-[15px] md:text-[20px]' onClick={() => window.open("https://www.instagram.com/xpc_marketing/")}>
               Get in touch
             </button>
+            {/* <button className='border border-black text-black rounded-full px-[50px] p-3 text-[15px] md:text-[20px]' onClick={Email}>
+              Email Us
+            </button> */}
           </div>
         </div>
       </div>

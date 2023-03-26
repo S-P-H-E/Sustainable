@@ -46,3 +46,8 @@ body {
     background-image: url('https://emoji.aranja.com/static/emoji-data/img-apple-160/1f680.png');
     background-size: 100%;
 }
+
+.mask {
+    -webkit-mask-image: linear-gradient( white 50%, white 50%);
+    mask-image: linear-gradient(to bottom, transparent, white 50%, white 50%, transparent);
+}
