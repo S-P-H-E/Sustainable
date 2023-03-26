@@ -10,7 +10,7 @@ import FaqSection from '@/components/FAQs';
 import FAQs from '@/components/FAQs';
 
 export default function Home() {
-  const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
 
   const servicesRef = useRef(null);
   const getInTouchRef = useRef(null);
