@@ -187,7 +187,7 @@ export default function Home() {
               <h1 className='heroh1 text-center text-[1.6rem] md:text-[3.4rem] leading-normal md:leading-[6.4rem] px-4'>
                 General FAQs
               </h1>
-              <p className='w-[250px] text-[12px] md:text-[1rem] md:w-[500px] px-4 mb-10'>Everything you need to know about our services and how they work. Can't find an answer? Please <mark className='bg-transparent underline cursor-pointer' onClick={Email}>chat to our friendly team.</mark></p>
+              <p className='w-[250px] text-[12px] md:text-[1rem] md:w-[500px] px-4 mb-10'>Everything you need to know about our services and how they work. Can&apos;t find an answer? Please <mark className='bg-transparent underline cursor-pointer' onClick={Email}>chat to our friendly team.</mark></p>
             </div>
             <FAQs />
           </div>
